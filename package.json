@@ -1,0 +1,20 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "FreindFinder",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/J-Falconetti/FriendFinder.git"
+  },
+  "author": "Joseph Falconetti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/J-Falconetti/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/J-Falconetti/FriendFinder#readme"
+}
