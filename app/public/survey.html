@@ -1,20 +1,70 @@
-    
-<!DOCTYPE html>
-<html lang="en">
-<html>
+    <!DOCTYPE html>
+    <html lang="en">
+    <html>
 
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <title>Friend Finder - Survey</title>
-</head>
-<div class='container'>
-        <div class='card-panel #03a9f4 light-blue col s12 center-align'>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <title>Friend Finder - Survey</title>
+    </head>
+    <div class='container'>
+        <div class='card-panel #03a9f4 light-blue s12 center-align'>
             <h4><strong> Questions</strong></h4>
             <div class='card-panel left-align white'>
                 <h5><strong>Tell us about Yourself</strong></h5>
                 <br>
+                <input id="name" type="text" class="validate" required>
+                <label class='active' for="name">Name (required)</label>
+                <input id="photo" type="text" class="validate" required>
+                <label class='active' for="name">Link to Photo Image (required)</label>
+                <a id="button" class="waves-effect waves-light btn">button</a>
+
+            </div>
+        </div>
+        <h3>Question 1</h3>
+        <p>Star Wars is the Greatest movie series  of all times</p>
+        <select data-placeholder="" class="browser-default" id="q1">
+            <option value="">Choose an option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h3>Question 2</h3>
+        <p>The Godfather is the greatest Mod Movie</p>
+        <select data-placeholder="" class="browser-default" id="q2">
+            <option value="">Choose an option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h3>Question 3</h3>
+        <p>Back to the Future was Michael J Fox's best work</p>
+        <select data-placeholder="" class="browser-default" id="q3">
+            <option value="">Choose an option</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+    </div>
+    <script>
+        // set up event handlier for /button>
+        $("#button").on("click", function () {
+            console.log("button works")
+            var user = $("#name").val().trim()
+            console.log(user)
+        })
+        // set var for user <input 
+        // console.log user input
+        // setup post ajax to send to backend
+        // clear inputs
+    </script>
