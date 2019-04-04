@@ -137,7 +137,23 @@
         // set up event handlier for /button>
         $("#button").on("click", function () {
             console.log("button works")
-            var user = $("#name").val().trim()
+            var user ={
+                "name": $("#name").val().trim(),
+                "photo": $("#photo").val().trim(),
+                "scores":[
+                    $("#q1").val().trim(),
+                    $("#q2").val().trim(),
+                    $("#q3").val().trim(),
+                    $("#q4").val().trim(),
+                    $("#q5").val().trim(),
+                    $("#q6").val().trim(),
+                    $("#q7").val().trim(),
+                    $("#q8").val().trim(),
+                    $("#q9").val().trim(),
+                    $("#q10").val().trim(),
+                    
+                ]
+            }
             console.log(user)
         })
         // set var for user <input 
