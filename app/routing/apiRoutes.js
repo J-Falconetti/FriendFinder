@@ -16,7 +16,7 @@ app.post("api/friends", function (req, res){
         var current = Friends[i];  
         var totalDifference = 0
         console.log(current.name)
-        for(var j = 0)
+        for(var x = 0; x <  )
     }
     res.json(data);
 })
