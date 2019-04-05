@@ -35,4 +35,5 @@ var Friends=[
       ]
   }
 ]
+// more frineds needed to be added in the hard code
 module.exports = Friends

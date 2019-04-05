@@ -20,4 +20,5 @@ app.post("api/friends", function (req, res){
     }
     res.json(data);
 })
-// nested for loop  
+// nested for loop  need for algorythem
+// answer needed to be placed in HTML format and send to browser
